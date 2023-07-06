@@ -1,0 +1,87 @@
+header{
+    background-color: #270a6e;
+    background-image: linear-gradient(225deg, #270a6e 0%, #02091c 50%, #030741 100%);
+    width: $font-medida;
+    height: 80px;
+    .tema2{
+        position: absolute;
+        padding: 20px 50px;
+        .tema3{
+            height: 40px;
+            width: 100px;
+        }
+    }
+}
+
+.botom{
+    @include coCur(blanchedalmond, pointer);
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    @extend %none;
+}
+#verte{
+    @extend %none;
+}
+.tema4{
+    float: right;
+    margin-right: 20px;
+    .tema5{
+        display: inline-block;
+        line-height: 80px;
+        margin: 0 5px;
+        .tema6{
+            color: nth($colores , 2 );
+            text-decoration: none;
+            font-size: 20px;
+            padding: 7px 13px;
+            border-radius: map-get($principal, rd);
+            text-transform: map-get($principal , tx);
+            font-family:$font-f;
+            transition: all 0.3s ease-in;
+            &:hover{
+                background: rgb(130, 90, 191);
+                padding: 5px 12px;
+                &.active{
+                    background: rgb(130, 90, 191);
+                    transition: 0.5s;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px){
+    header{
+        background-color: rgb(32, 32, 66);
+      }
+    #verte:checked ~ .tema4{
+        left: 0;}
+    .botom{
+        display: block;
+    }
+    .tema4{
+        position: fixed;
+        width: $font-medida;
+        height: 100vh;
+        background-color: #0b1837;
+        background-image: linear-gradient(160deg, #0b1837 0%, #04312c 100%);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s ease-in-out;
+        .tema5{
+            display: block;
+            margin: 50px 0;
+            line-height: 30px;
+            .tema6{
+                font-size: 20px;
+                &:hover, &.active{
+                    background: none;
+                    color: rgb(31, 98, 95);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+.legado{
+    background: url(../img/nuevofondo.jpg) no-repeat;
+    background-size: cover;
+    font-family: 'Quicksand', sans-serif;
+}
+.legado2{
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 15px;
+}
+.card{
+    width: 100%;
+    @extend %flexConRaw;
+    .cartas{
+        width: 300px;
+        margin: 20px;
+        border-radius: 6px;
+        overflow: hidden;
+        background: #fff;
+        box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+        cursor: default;
+        transition: all 400ms ease;
+        figure img{
+            @include wh(300px, 250px);
+        }
+        .contenido{
+            padding: 15px;
+            text-align: center;
+            p{
+                line-height: 1;
+            }
+            h3{
+                font-weight: 400;
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
+.cartas:hover{
+        box-shadow: 5px 5px 20px rgba(177, 235, 19, 0.4);
+        transform:translateY(-3%);
+        background-color: rgb(84, 75, 75);
+        @include coCur(white, pointer);
+        transform: scale(1.03);
+        transition: all 1s ease;
+}

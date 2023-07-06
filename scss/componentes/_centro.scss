@@ -1,0 +1,70 @@
+.tema7{
+    background: url(../img/pruebas.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: $font-medida;
+    height: 800px;
+    .interno{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: #ffffff;
+        width: 40%;
+        height: 800px;
+        padding: 30px;
+        .tema8{
+            text-align: center;
+            text-transform: uppercase;
+            font-family: $font-f;
+            font-weight: 600;
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+        .tema9{
+            padding-top: 20px;
+            color: rgb(255, 255, 255);
+            font-family: $font-f;
+            font-size: 20px;
+            line-height: 28px;
+        }
+        .tema10{
+            @extend %none;
+        }
+    }
+}
+@media (max-width: 576px){
+    .tema7{
+       background: url(../img/cab1db7c52e499bfd50c664529deaf23.jpg) no-repeat;
+       background-size: cover;
+       background-position:center;
+       width: $font-medida;
+       height: 800px;
+       .interno{
+           display: none;
+           }
+       .tema10{
+           display: inline-block;
+           width: $font-medida;
+           height: 400px;
+           .tema11{
+               width: $font-medida;
+               text-align: center center;
+               color: lighten(white, 20%);
+               padding-top: 200px;
+               padding-left: 5px;
+               font-size: 25px;
+               font-family: 'Dancing Script', cursive;
+               font-weight: 400;
+               }
+           .tema12{
+               text-align: center;
+               padding-top: 5px;
+               color: white;
+               text-shadow: 0px 8px 10px rgb(173, 17, 17);
+               font-family: 'Courgette', cursive;
+               font-size: 30px;
+               }
+           
+       }
+   }
+}

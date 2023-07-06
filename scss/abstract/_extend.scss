@@ -1,0 +1,38 @@
+%flexConRaw{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+%flexSinRaw{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+%flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%flexColumn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+%inflex{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+%block{
+    display: block;
+
+}
+%none{
+    display: none;
+}

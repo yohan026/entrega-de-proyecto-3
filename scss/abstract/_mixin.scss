@@ -1,0 +1,20 @@
+@mixin misPx($wi, $he, $bcr){
+    width: $wi;
+    height: $he;
+    background: $bcr;
+}
+
+@mixin disPley($dis, $dir, $jus, $ite){
+    display: $dis;
+    flex-direction: $dir;
+    justify-content: $jus;
+    align-items: $ite;
+}
+@mixin coCur($co, $cur){
+    color: $co;
+    cursor: $cur;
+}
+@mixin wh($wi, $he){
+    width: $wi;
+    height: $he;
+}

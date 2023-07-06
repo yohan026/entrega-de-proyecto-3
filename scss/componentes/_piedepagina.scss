@@ -1,0 +1,96 @@
+
+.pie-pag{
+    width: $font-medida;
+    height: 250px;
+    background-color: rgb(1, 1, 8);
+    .grup1{
+        width:$font-medida;
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 100px;
+        padding: 10px 0px;
+        .box figure{
+            width: $font-medida;
+            height: 100%;
+            display: flex;
+            justify-content:start;
+            img{
+                width: 200px;
+                height: 200px;
+                }
+            a{
+                text-decoration: none;
+                }
+            
+        }
+    .box h2{
+        color: antiquewhite;
+        font-family: 'Quicksand', sans-serif;
+        margin-bottom: 25px;
+        text-align: center;
+        font-size: 20px;}
+    .box p{
+        color: white;
+        font-family: 'Quicksand', sans-serif;
+        text-align: center center;
+        margin-bottom: 15px;
+        }
+    .redes{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a{
+        display: inline-block;
+        text-decoration: none;
+        width: 40px;
+        height: 40px;
+        line-height: 54px;
+        color: white;
+        margin-right: 15px;
+        background-color: rgb(19, 95, 130);
+        text-align: center;
+        &:hover{
+            transform: translateY(-20%);
+            background-color: rgba(67, 142, 234, 0.747);
+            color: white;
+            cursor: pointer;
+            transition: all .1s ease-out;
+        }
+    }
+}  
+    .redes img{
+        width: 25px;
+        height: 25px;
+    }
+}
+    .grup2{
+        background-color: #0a1a2a;
+        padding: 10px 10px;
+        text-align: center;
+        color: white;
+        small{
+            font-size: 15px;
+            font-family: 'Quicksand', sans-serif;
+        }
+    }
+}
+
+@media (max-width: 576px){
+    .pie-pag .grup1{
+        width: $font-medida;
+        background-color: rgb(28, 28, 29);
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+        .box h2{
+            text-align: start;
+            padding-left: 5px;
+        }
+        .box p{
+            padding-left: 5px;
+        }
+    }
+
+}

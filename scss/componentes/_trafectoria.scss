@@ -1,0 +1,78 @@
+.azul{
+    background: rgb(24, 24, 38);
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Quicksand', sans-serif;
+}
+.trayectoria{
+    h1, h2{
+        margin-left: 10px;
+        margin-top: 20px;
+        text-align: center;
+        font-size: 30px;
+        color:wheat;
+        }
+    p{
+        text-align:left;
+        margin: 18px;
+        font-size: 18px;
+        color:white;
+    }
+}
+.one, .two, .three, .four{
+    width: 400px;
+    height: 400px;
+    margin: 13px;
+    cursor: crosshair;
+    border-radius: 5px;
+    box-shadow: 8px 8px 10px rgb(211, 205, 152);
+}
+.one, .three{
+    float:right;
+}
+.two, .four{
+    float: left;
+}
+.trayectoria2{
+    display: none;
+}
+
+@media (max-width: 576px){
+    .trayectoria{
+        display: none;
+    }
+    .trayectoria2{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .trayec1{
+        text-align: center;
+        margin: 10px;
+        text-transform: uppercase;
+        color: white;
+        font-size: 25px;
+        text-shadow: 1px 5px 5px rgb(154, 154, 76);
+    }
+    .trayec3{
+        text-align: center center;
+        margin-top: 5px;
+        margin-left: 10px;
+        color: white;
+    }
+    .trayec2{
+        text-align: center;
+        margin: 10px;
+        text-transform: uppercase;
+        color: white;
+        font-size: 25px;
+        text-shadow: 1px 5px 5px rgb(154, 154, 76);
+    }
+    .cinco{
+        width: 90%;
+        height: 250px;
+        margin: 10px 0px 10px 20px;
+        border-radius: 5px;
+        box-shadow: 1px 1px 1px rgb(211, 205, 152);
+    }
+}
