@@ -36,7 +36,8 @@ header .tema2 {
 }
 header .tema2 .tema3 {
   height: 40px;
-  width: 100px;
+  width: 120px;
+  object-fit: contain;
 }
 
 .botom {
@@ -162,7 +163,7 @@ header .tema2 .tema3 {
     text-align: center center;
     color: white;
     padding-top: 200px;
-    padding-left: 5px;
+    padding-left: 8px;
     font-size: 25px;
     font-family: "Dancing Script", cursive;
     font-weight: 400;
@@ -482,7 +483,7 @@ header .tema2 .tema3 {
   .carrusell .elemento {
     width: 400px;
     height: 400px;
-    background: #2ca298;
+    background: rgba(16, 35, 61, 0.3098039216);
     flex: 1 0 auto;
     margin: 20px;
   }
@@ -525,7 +526,7 @@ header .tema2 .tema3 {
   margin-bottom: 16px;
   border: 1px solid #1f53c5;
   font-family: "Quicksand", sans-serif;
-  font-size: 18px;
+  font-size: 15px;
   color: aliceblue;
 }
 .registro .control12 {
@@ -533,21 +534,35 @@ header .tema2 .tema3 {
   height: 100px;
   background: #24303c;
   padding: 10px;
+  resize: none;
   border-radius: 4px;
   margin-bottom: 16px;
   border: 1px solid #1f53c5;
   font-family: "Quicksand", sans-serif;
-  font-size: 18px;
+  font-size: 15px;
   color: aliceblue;
 }
-.registro .boton {
+
+.boton {
   width: 100%;
-  background: #1f53c5;
-  border: none;
-  padding: 12px;
-  color: white;
-  margin-top: 30px;
+  background-color: transparent;
+  font-weight: semibold;
+  color: aliceblue;
   font-size: 16px;
+  padding: 1rem 1.5rem;
+  border: 1px solid #1f53c5;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 1s ease;
+  box-shadow: 0.3rem 0.3rem 1rem rgb(12, 84, 100);
+}
+
+.boton:hover {
+  box-shadow: 0.3rem 0.3rem 1rem #7e9aad;
+}
+
+.boton:active {
+  box-shadow: inset 0.2rem 0.2rem 1rem #fff;
 }
 
 @media (max-width: 576px) {

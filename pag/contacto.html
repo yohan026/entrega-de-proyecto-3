@@ -29,13 +29,13 @@
             <li class="tema5"><a class="tema6" href="./contacto.html">Contacto</a></li>
         </ul>
     </header>
-    <section class="registro">
+    <form class="registro" action="archivo.php" method="get">
         <h3 class="regis">Contacto</h3>
-        <input class="control" type="text" name="Nombres" id="Nombres" placeholder="Ingrese su Nombre y Apellido" >
-        <input class="control" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
-        <input class="control12" type="text" name="correo" id="correo" placeholder="Dejame tu Opinión">
+        <input class="control" type="text" name="Nombres" id="Nombres" required placeholder="Ingrese su Nombre y Apellido" >
+        <input class="control" type="email" name="correo" id="correo" required placeholder="Ingrese su Correo">
+        <textarea class="control12" name="Dejame tu Opinión" id="comentario" minlength="10" maxlength="25" required placeholder="Comentario"></textarea>
         <input class="boton" type="submit" value="Enviar ">
-    </section>
+    </form>
     <footer class="pie-pag">
         <div class="grup1">
             <div class="box">
